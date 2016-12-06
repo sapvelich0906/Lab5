@@ -19,23 +19,14 @@ double power(double a, int c)
 			a1 = a1 / a;
 	return a1;
 }
-int main(int argc, char *argv[])
+int main()
 {
 	double a, b;
         int c;
-	setlocale(LC_ALL, "rus"); 
-	if (argc < 3) 
-	{
-		cout << "Error, parameters in command line is not enough to specify the source data. Press any key to end..." << endl;
-		system("pause");
-		return 1;
-	}
-	a = stod(argv[1]);
-	c = stoi(argv[2]);
-
+	cin >> a >> c;
 	b = power(a, c); 
 
-	cout << "a^c=" << b;
+	cout << "a^c=" << b << endl;
 	system("pause"); 
 	return 0;
 }
